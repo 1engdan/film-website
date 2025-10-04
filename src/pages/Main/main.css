@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 72px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: rgba(16, 14, 25, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.header-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 137px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-input-container {
+    max-width: 424px;
+    width: 424px;
+}
+
+.catalog-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.catalog-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(202px, 1fr));
+    gap: 25px;
+}

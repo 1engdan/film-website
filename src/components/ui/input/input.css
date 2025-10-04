@@ -1,0 +1,39 @@
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container img {
+  position: absolute;
+  left: 10px;
+}
+
+.input-field {
+  font-size: 16px;
+  height: 30px;
+  background: linear-gradient(to bottom right, rgba(63, 59, 82, 0.3) 0%, rgba(115, 109, 148, 0.3) 100%);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+}
+
+.input-field.with-icon {
+  padding-left: 40px;
+}
+
+
+.input-field::placeholder {
+  color: #554F70;
+  opacity: 1;
+}
+
+.input-field:-ms-input-placeholder {
+  color: #554F70;
+}
+
+.input-field::-ms-input-placeholder {
+  color: #554F70;
+}

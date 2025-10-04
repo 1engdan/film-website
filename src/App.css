@@ -1,0 +1,21 @@
+#root {
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 40px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 770px) and (max-width: 1150px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 770px) {
+    .container {
+      padding: 0 15px;
+    }
+}
