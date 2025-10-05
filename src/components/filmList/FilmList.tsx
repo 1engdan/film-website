@@ -36,7 +36,7 @@ const FilmList = ({ searchQuery = '' }: FilmListProps) => {
                 </div>
                 {films.length === 0 && (
                     <div className="no-films">
-                        Фильмы не найдены
+                        Фильмы не найдены :(
                     </div>
                 )}
         </div>

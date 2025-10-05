@@ -6,6 +6,10 @@
     margin-bottom: 25px;
     background: rgba(16, 14, 25, 0.5);
     backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header-box {
@@ -26,4 +30,25 @@
 .header-input-container {
     max-width: 424px;
     width: 424px;
+}
+
+.catalog {
+    margin-top: 72px;
+}
+
+@media (min-width: 375px) and (max-width: 736px) {
+    .header {
+        min-height: 64px;
+        margin-bottom: 5px;
+    }
+    .logo {
+        display: none;
+    }
+    .header-input-container {
+        max-width: 736px;
+        width: 100%;
+    }
+    .catalog {
+        margin-top: 64px;
+    }
 }
