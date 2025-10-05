@@ -3,10 +3,12 @@ import Logo from '../../assets/logo.svg';
 import Search from '../../assets/search.svg';
 import Input from '../../components/ui/input/Input';
 import './main.css'
-import Card from '../../components/card/Card';
+import FilmList from '../../components/filmList/FilmList';
+import { useDebounce } from '../../hooks/useDebounce';
 
 const Main = () => {
     const [searchText, setSearchText] = useState('');
+    const debouncedSearchText = useDebounce(searchText, 500);
 
     const handleInputChange = (field: string, value: string) => {
         if (field === 'search') {
@@ -34,20 +36,9 @@ const Main = () => {
                     </div>
                 </div>
             </header>
-            <section className='catalog'>
+            <section className="catalog">
                 <div className="container">
-                    <h1 className='catalog-title'>Каталог фильмов</h1>
-                    <div className="catalog-wrapper">
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                    </div>
+                    <FilmList searchQuery={debouncedSearchText}/>
                 </div>
             </section>
         </>
