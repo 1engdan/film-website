@@ -21,7 +21,7 @@
 .film-detail-right {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     width: 100%;
 }
 
@@ -47,7 +47,7 @@
 .film-detail-right--header {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   align-items: flex-start;
 }
 
@@ -85,7 +85,7 @@
 
 @media (max-width: 736px) {
     .film-detail {
-        gap: 10px !important;
+        gap: 5px !important;
         flex-direction: column;
     }
 
@@ -106,6 +106,7 @@
 
     .film-detail-right--header {
         align-items: center;
+        gap: 5px;
     }
 
     .film-detail-meta,
