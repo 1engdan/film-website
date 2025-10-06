@@ -33,6 +33,7 @@
 
 .catalog {
     margin-top: 72px;
+    min-height: calc(100vh - 2 * 72px);
 }
 
 .footer {
