@@ -41,6 +41,11 @@ const Main = () => {
                     <FilmList searchQuery={debouncedSearchText}/>
                 </div>
             </section>
+            <footer className="footer">
+                <div className="container">
+                    <p className="footer-text">Cinex 2025. Применяются рекомендованные технологии. ТЗ Effective Mobile</p>
+                </div>
+            </footer>
         </>
     )
 }

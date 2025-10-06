@@ -3,7 +3,6 @@
     align-items: center;
     min-height: 72px;
     width: 100%;
-    margin-bottom: 25px;
     background: rgba(16, 14, 25, 0.5);
     backdrop-filter: blur(10px);
     position: fixed;
@@ -36,10 +35,23 @@
     margin-top: 72px;
 }
 
-@media (min-width: 375px) and (max-width: 736px) {
+.footer {
+    width: 100%;
+    min-height: 72px;
+    background: rgba(16, 14, 25, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    opacity: 0.65;
+    font-size: 14px;
+}
+
+@media (max-width: 736px) {
     .header {
         min-height: 64px;
-        margin-bottom: 5px;
     }
     .logo {
         display: none;
@@ -50,5 +62,11 @@
     }
     .catalog {
         margin-top: 64px;
+    }
+    .footer {
+        min-height: 64px;
+    }
+    .footer-text {
+        font-size: 12px;
     }
 }
