@@ -1,4 +1,4 @@
-run-app:
+start-app:
 	npm start
 
 build-app:
