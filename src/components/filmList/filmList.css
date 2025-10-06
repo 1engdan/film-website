@@ -6,6 +6,7 @@
     align-items: center;
     min-height: 400px;
     font-size: 20px;
+    min-height: calc(100vh - 2 * 72px);
 }
 
 .error-message {
@@ -42,5 +43,6 @@
     .error-container,
     .no-films {
         font-size: 16px;
+        min-height: calc(100vh - 2 * 64px);
     }
 }
