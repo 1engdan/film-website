@@ -11,6 +11,11 @@ export interface Film {
   poster: string;
 }
 
+export interface FilmListProps {
+  searchQuery?: string;
+}
+
 export interface CardProps {
   film: Film;
+  onClick?: () => void;
 }
