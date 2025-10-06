@@ -37,3 +37,9 @@
 .input-field::-ms-input-placeholder {
   color: #554F70;
 }
+
+@media (max-width: 736px) {
+  .input-field {
+    font-size: 14px;
+  }
+}
