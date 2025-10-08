@@ -12,8 +12,7 @@
 
 ### Доступные адреса:
 > [!IMPORTANT]
-> - **🌐 Frontend**: http://localhost:3333/
-> - **📊 Backend (API)**: http://localhost:3334/films
+> - **🌐web**: https://cinex.michat.pw/
 
 ## 🛠 Технологический стек
 
@@ -27,10 +26,19 @@
 ### 1. Клонирование репозитория
 ```shell
 git clone https://github.com/1engdan/film-website.git
-cd film-website
 ```
 
 ## 2. Запуск приложения
+
+- **🐳 Docker (все платформы)** 
+   - При наличии утилиты **make** от **chocolatey**:
+   ```shell
+   make build-docker
+   ```
+   - Без утилиты make:
+   ```shell
+   docker-compose -f docker/docker-compose.yml up --build -d
+   ```
 
 - **🍎 macOS / 🐧 Linux**
    ```shell
