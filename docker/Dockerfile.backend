@@ -1,0 +1,13 @@
+FROM node:20.17.0-alpine
+
+WORKDIR /app/backend
+
+# Устанавливаем json-server глобально
+RUN npm install -g json-server@0.17.4
+
+# Копируем данные
+COPY public/ /app/backend/public/
+
+EXPOSE 3334
+
+CMD ["json-server", "--host", "0.0.0.0", "--port", "3334", "--watch", "public/data.json"]

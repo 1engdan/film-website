@@ -1,0 +1,22 @@
+services:
+  frontend:
+    container_name: movie_website
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+    ports:
+      - "3333:80"
+    environment:
+      - VITE_PORT=3333
+    depends_on:
+      - backend
+
+  backend:
+    container_name: movie_api
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend
+    ports:
+      - "3334:3334"
+    volumes:
+      - ./public:/app/public
