@@ -4,3 +4,6 @@ start-app:
 build-app:
 	npm i
 	npm start
+
+build-docker:
+	docker-compose -f docker/docker-compose.yml up --build -d
