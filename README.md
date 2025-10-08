@@ -13,6 +13,7 @@
 ### Доступные адреса:
 > [!IMPORTANT]
 > - **🌐web**: https://cinex.michat.pw/
+> - **📊backend** https://api.cinex.michat.pw/films
 
 ## 🛠 Технологический стек
 
