@@ -1,8 +1,8 @@
 import axios from "axios";
-import { API_URL_DEV } from "./setting";
+import { API_URL } from "./setting";
 
 const client = axios.create({
-    baseURL: API_URL_DEV + '/films',
+    baseURL: API_URL + '/films',
     withCredentials: false
 })
 

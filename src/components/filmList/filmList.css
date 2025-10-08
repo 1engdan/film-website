@@ -45,3 +45,10 @@
         min-height: calc(100vh - 2 * 64px);
     }
 }
+
+@media (max-width: 366px) {
+    .catalog-wrapper {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
