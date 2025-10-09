@@ -46,7 +46,7 @@
     }
 }
 
-@media (max-width: 366px) {
+@media (max-width: 556px) {
     .catalog-wrapper {
         grid-template-columns: 1fr;
         gap: 10px;
